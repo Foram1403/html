@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      body
+      {
+        background-color: beige;
+      }
+        #rcorners2 {
+            border-radius: 25px;
+            border: 2px solid blue;
+            background-color:lightblue;
+            color: palevioletred;
+            padding: 20px;
+            width: 1420px;
+            height: 30px;
+        }
+        .column {
+            float: left;
+            width: 15%;
+            padding: 30px;
+        }
+        .column1 {
+            float: left;
+            width: 15%;
+            
+        } 
+
+        .block
+        {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      .blk
+        {
+          background-color:aqua;
+          /* height: 350px; */
+          width: 650px;
+        }
+      .blk1
+        {
+          background-color:steelblue;
+          /* height: 350px; */
+          width: 650px;
+        }
+
+        .blk2
+        {
+          background-color:fuchsia;
+          /* height: 350px; */
+          width: 200px;
+        }
+        /* Clear floats after the columns */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+       
+    
+    </style>
+</head>
+
+<body>
+
+    <h1 id="rcorners2" align="center">The_Best_Photographer's_Place</h1>
+
+    <div class="row">
+        <div class="column">
+          <img src="./Images/mountain.jpg" alt="path" style="width:100%">
+          <h3>RS 300/- Unique</h3>
+        </div>
+        <div class="column">
+          <img src="./Images/river.jpg" alt="river" style="width: 100%">
+          <h3>RS 400/- Great</h3>
+        </div>
+        <div class="column">
+          <img src="./Images/city.jpg" alt="city" style="width:100%">
+          <h3>RS 200/- Best</h3>
+        </div>
+        <div class="column">
+            <img src="./Images/road.jpg" alt="road" style="width:100%">
+            <h3>RS 260/- Awesome</h3>
+          </div>
+          <div class="column">
+            <img src="./Images/sky.jpg" alt="sky" style="width:100%">
+            <h3>RS 340/- </h3>
+          </div>
+</div>
+
+<table class="block">
+  <tr>
+    <td class="blk">
+      <p>
+        <h2><b>About Photography</b></h2>
+        Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, 
+        or chemically by means of a light-sensitive material such as photographic film. It is employed in many fields of science, manufacturing 
+        (e.g., photolithography), and business, as well as its more direct uses for art, film and video production, recreational purposes, hobby, and mass communication.
+        Typically, a lens is used to focus the light reflected or emitted from objects into a real image on the light-sensitive surface inside a camera during a timed exposure.
+        With an electronic image sensor, this produces an electrical charge at each pixel, which is electronically processed and stored in a digital image file for subsequent display or processing.
+        
+      </p>
+    </td>
+  <td class="blk1">
+      
+      <p>
+        <h2><b>History of Photography</b></h2>
+        Photography is the result of combining several technical discoveries, 
+        relating to seeing an image and capturing the image. 
+        The discovery of the camera obscura ("dark chamber" in Latin)
+        that provides an image of a scene dates back to ancient China. 
+        Greek mathematicians Aristotle and Euclid independently'
+        described a camera obscura in the 5th and 4th centuries BCE.
+        In the 6th century CE, Byzantine mathematician Anthemius 
+        of Tralles used a type of camera obscura in his experiments.
+        The Arab physicist Ibn al-Haytham (Alhazen) (965-zz1040) also invented 
+        a camera obscura as well as the first true pinhole camera.
+        The invention of the camera has been traced back to the work of Ibn al-Haytham.
+        While the effects of a single light passing through a pinhole had been described earlier,
+
+      </p>
+    </td>
+  
+
+  <td class="blk2">
+        <p>
+            <img src="./Images/city.jpg" alt="city" style="width:70%">
+            <h2><b>Leave Your Details Here</b></h2>
+            <form>
+                <fieldset>
+                <label>Name</label>
+                <input type="text" name="" required>
+
+                <label>Email</label>
+                <input type="email" name="">
+
+            </fieldset>
+            </form>
+         </p>
+        </td>
+
+        </tr>
+        </table>
+</body>
+
+</html>
